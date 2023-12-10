@@ -4,9 +4,9 @@ managed:
   go_package_prefix:
     default: yuridev.com/googdemo/domain
 plugins:
-  - plugin: buf.build/protocolbuffers/go
+  - plugin: buf.build/protocolbuffers/go:v1.31.0
     out: domain
     opt: paths=source_relative
-  - plugin: buf.build/grpc/go
+  - plugin: buf.build/grpc/go:v1.3.0
     out: domain
     opt: paths=source_relative
