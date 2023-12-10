@@ -1,0 +1,12 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: yuridev.com/googdemo/domain
+plugins:
+  - plugin: buf.build/protocolbuffers/go
+    out: domain
+    opt: paths=source_relative
+  - plugin: buf.build/grpc/go
+    out: domain
+    opt: paths=source_relative

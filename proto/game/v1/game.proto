@@ -1,0 +1,14 @@
+syntax = "proto3";
+package proto.game.v1;
+import "proto/core/v1/core.proto";
+
+service GameService {
+  rpc RandomNumber (RandomNumberRequest) returns (RandomNumberResponse){};
+}
+
+message RandomNumberRequest {
+}
+
+message RandomNumberResponse {
+  proto.core.v1.RandomNumber random = 1;
+}
