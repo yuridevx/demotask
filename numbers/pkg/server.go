@@ -4,10 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"yuridev.com/googdemo/numbers/frontend"
 	"yuridev.com/googdemo/numbers/pkg/numbers"
 )
 
@@ -68,7 +66,5 @@ func NewServer(
 	}
 	s.g.GET("/api/game/:id", s.GetGame)
 	s.g.POST("/api/game/:id", s.PlayGame)
-	fs := frontend.GetFrontendAssets(true)
-	s.g.Use(static.Serve("/", fs))
 	return s
 }

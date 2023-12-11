@@ -4,6 +4,7 @@ Game - Service that generates random numbers
 Numbers - The game itself, including frontend and golang static file serving
 Proto - protocol files for grpc
 Integrations - integration tests for the game
+Frontend - self-explanatory
 
 # How to scale it for 10000+
 
