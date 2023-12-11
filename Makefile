@@ -1,8 +1,7 @@
 .PHONY: install
 
-VERSION=v1.28.1
-BUF=go run github.com/bufbuild/buf/cmd/buf@$(VERSION)
+RUN=go run
+BUF=$(RUN) github.com/bufbuild/buf/cmd/buf@v1.28.1
 
 build:
-	cd domain
-	$(BUF) build
+	$(BUF) generate
