@@ -18,4 +18,5 @@ Integrations - integration tests for the game
 1. Decoupling
 2. Inversion of control
 3. Graceful shutdown
-4. High cohesion, loose coupling + Single source of truth (Meaningful class structure) 
+4. High cohesion, loose coupling + Single source of truth (Meaningful class structure)
+5. MVC partially for numbers service.
