@@ -17,7 +17,7 @@ Frontend - self-explanatory
 # Design approach used principles
 
 1. Decoupling
-2. Inversion of control
+2. Inversion of control + Dependency Injection
 3. Graceful shutdown
 4. High cohesion, loose coupling + Single source of truth (Meaningful class structure)
 5. MVC partially for numbers service.
